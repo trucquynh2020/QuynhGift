@@ -59,7 +59,7 @@ function checkAnswer(currentLevel){
         setTimeout(function(){
             $("#simon-game .container-fluid").removeClass("game-over");
         },200)
-        $("#level-title").text("Thua rồi, đừng cay cú nha :))))");
+        $("#level-title").html("Thua không cay cú nha :))))").append('<iframe src="https://giphy.com/embed/Fn7q3cMgPZmqk" width="55" height="55" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>');
         playSound("wrong");
     }
     else {
