@@ -41,7 +41,7 @@ body {
 }
 
 #simon-game .container-fluid{
-  width: 85%;
+  width: 70%;
 }
 
 .btn2 {
@@ -93,6 +93,12 @@ body {
 footer{
   background-color:#def4f0;
   padding: 10px;
+}
+
+@media (max-width:800px){
+  #simon-game .container-fluid{
+    width: 100%;
+  }
 }
 
 /* Box Animination */
