@@ -67,28 +67,28 @@ body {
 .red {
   border: 10px solid red;
   background-color: red;
-  background-image: url("images/cat.png");
+  background-image: url("cat.png");
   background-size: contain;
 }
 
 .green {
   border: 10px solid green;
   background-color: green;
-  background-image: url("images/cat1.jpg");
+  background-image: url("cat1.jpg");
   background-size: contain;
 }
 
 .blue {
   border: 10px solid blue;
   background-color: blue;
-  background-image: url("images/cat2.jpg");
+  background-image: url("cat2.jpg");
   background-size: contain;
 }
 
 .yellow {
   border: 10px solid yellow;
   background-color: yellow;
-  background-image: url("images/cat4.jpg");
+  background-image: url("cat4.jpg");
   background-size: contain;
 }
 
