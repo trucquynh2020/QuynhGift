@@ -12,7 +12,7 @@ body {
 }
 
 #simon-game{
-  padding: 7%; auto;
+  padding: 5%;
   background-color: #011F3F;
 }
 
@@ -40,17 +40,10 @@ body {
   color: #FEF2BF;
 }
 
-.container-fluid{
+#simon-game .container-fluid{
   width: 85%;
 }
-.start-btn{
-  border: 1px solid black;
-  border-radius: 30%;
-  font-size: 12px;
-  display: inline-block;
-  height: 50px;
-  width: 100px;
-}
+
 .btn2 {
   margin: 25px;
   display: inline-block;

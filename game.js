@@ -49,9 +49,9 @@ function checkAnswer(currentLevel){
     if (userClickedPattern[currentLevel] != gamePattern[currentLevel]){
         console.log("wrong");
         startOver();
-        $("body").addClass("game-over");
+        $("#simon-game").addClass("game-over");
         setTimeout(function(){
-            $("body").removeClass("game-over");
+            $("simon-game").removeClass("game-over");
         },200)
         $("h1").text("Game Over, Press Any Key to Start A New Game.");
         playSound("wrong");
