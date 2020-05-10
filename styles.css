@@ -1,11 +1,11 @@
 body {
   font-family: 'Source Code Pro', monospace;
   text-align: center;
-  background-color: #00a1ab;
+  background-color: black;
+  color: white;
 }
 
 #music{
-  background-color: #00a1ab;
   margin:auto;
   padding:5%;
   line-height: 1.5;
@@ -26,7 +26,6 @@ body {
 .welcome-heading{
   font-family: 'EB Garamond', serif;
   color: #f6d743;
-  font-size: 300%;
 }
 
 .text{
@@ -91,7 +90,6 @@ body {
 }
 
 footer{
-  background-color:#def4f0;
   padding: 10px;
 }
 
@@ -101,6 +99,62 @@ footer{
   }
 }
 
+/* Text animation */
+.ml7 {
+  position: relative;
+  font-weight: 900;
+  font-size: 3.7em;
+}
+.ml7 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+.ml7 .letter {
+  transform-origin: 0 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+/* Welcome Animination */
+.ml9 {
+  position: relative;
+  font-weight: 200;
+  font-size: 4em;
+}
+
+.ml9 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml9 .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+/* .last-animation */
+  .ml16 {
+    color: #402d2d;
+    padding: 40px 0;
+    font-weight: 800;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    overflow: hidden;
+  }
+  
+  .ml16 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+}
 /* Box Animination */
 body {
   background: black;

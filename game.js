@@ -3,6 +3,67 @@ var gamePattern = [];
 var userClickedPattern = [];
 var level = 0;
 var started = false;
+
+// Welcome Animation
+var textWrapper = document.querySelector('.ml9 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml9 .letter',
+    scale: [0, 1],
+    duration: 1500,
+    elasticity: 600,
+    delay: (el, i) => 45 * (i+1)
+  }).add({
+    targets: '.ml9',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
+// Text Animation
+var textWrapper2 = document.querySelector('.ml7 .letters');
+textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml7 .letter',
+    translateY: ["1.1em", 0],
+    translateX: ["0.55em", 0],
+    translateZ: 0,
+    rotateZ: [180, 0],
+    duration: 750,
+    easing: "easeOutExpo",
+    delay: (el, i) => 50 * i
+  }).add({
+    targets: '.ml7',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
+  //Last Animation
+  var textWrapper = document.querySelector('.ml16');
+  textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+  
+  anime.timeline({loop: true})
+    .add({
+      targets: '.ml16 .letter',
+      translateY: [-100,0],
+      easing: "easeOutExpo",
+      duration: 1400,
+      delay: (el, i) => 30 * i
+    }).add({
+      targets: '.ml16',
+      opacity: 0,
+      duration: 1000,
+      easing: "easeOutExpo",
+      delay: 1000
+    });
+
+
 $("h1.welcome-heading").fadeOut(500).fadeIn(2000);
 $(".start-btn").click(function() {
     if (!started) {
