@@ -18,11 +18,17 @@ $(document).keypress(function(){
     }
 })
 $(".btn2").click(function(){
-    var userChosenColour = $(this).attr("id");
-    userClickedPattern.push(userChosenColour);
-    playSound(userChosenColour);
-    animatePress(userChosenColour);
-    checkAnswer(userClickedPattern.length - 1);
+    if (started){
+        var userChosenColour = $(this).attr("id");
+        userClickedPattern.push(userChosenColour);
+        playSound(userChosenColour);
+        animatePress(userChosenColour);
+        checkAnswer(userClickedPattern.length - 1);
+    }
+    else{
+        alert("Nhấn Start đã chị ơi!!!")
+    }
+
 })
 function nextSequence() {
     userClickedPattern = [];
@@ -49,11 +55,11 @@ function checkAnswer(currentLevel){
     if (userClickedPattern[currentLevel] != gamePattern[currentLevel]){
         console.log("wrong");
         startOver();
-        $("#simon-game").addClass("game-over");
+        $("#simon-game .container-fluid").addClass("game-over");
         setTimeout(function(){
-            $("#simon-game").removeClass("game-over");
+            $("#simon-game .container-fluid").removeClass("game-over");
         },200)
-        $("#level-title").text("Game Over, Press Any Key to Start A New Game.");
+        $("#level-title").text("Thua rồi, đừng cay cú nha :))))");
         playSound("wrong");
     }
     else {
